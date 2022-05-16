@@ -16,7 +16,7 @@ def register():
         db.session.add(user)
         db.session.commit()
 
-        mail_message("Welcome to ThyVoice","email/welcome_user",user.email,user=user)
+        mail_message("Welcome to foodAirline","email/welcome_user",user.email,user=user)
 
         return redirect(url_for('auth.login'))
 
@@ -36,7 +36,7 @@ def login():
 
         flash('Invalid username or password')
 
-    title = 'ThyVoice Login'
+    title = 'foodAirline Login'
 
     return render_template('auth/login.html',login_form=login_form,title=title)
 
