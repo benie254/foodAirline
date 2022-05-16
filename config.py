@@ -8,7 +8,7 @@ class Config:
 
     SECRET_KEY = os.environ.get('SECRET_KEY')
 
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://benie:12345@localhost/thyvoice'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://benie:12345@localhost/food'
     SQLALCHEMY_TRACK_MODIFICATIONS = True
 
     UPLOADED_PHOTOS_DEST = 'app/static/photos'
@@ -31,7 +31,7 @@ class ProdConfig(Config):
 
     # SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL').replace("://", "ql://", 1)
 
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://benie:12345@localhost/thyvoice'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://benie:12345@localhost/food'
 
     DEBUG = True
 
@@ -45,7 +45,7 @@ class DevConfig(Config):
 
     # SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL').replace("://", "ql://", 1)
 
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://benie:12345@localhost/thyvoice'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://benie:12345@localhost/food'
 
 
 config_options = {
